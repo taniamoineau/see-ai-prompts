@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Prompts to Try</title>
+<meta name="description" content="Prompts from the SEE Community session on practical AI for category, marketing and sales teams in FMCG and retail.">
+<style>
+  :root {
+    --brand: #00486a;
+    --accent: #006c98;
+    --tint: #eaf1f5;
+    --line: #c9dbe5;
+    --ink: #111111;
+    --muted: #4d4d4d;
+    --mark: #fff1c2;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  header {
+    background: var(--brand);
+    color: #ffffff;
+    padding: 40px 16px 36px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  header p.eyebrow {
+    margin: 0 0 10px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+  header h1 { margin: 0 0 12px; font-size: 32px; line-height: 1.2; }
+  header p.lead { margin: 0; font-size: 18px; max-width: 640px; }
+  main { padding: 28px 16px 56px; }
+  .howto {
+    background: var(--tint);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 32px;
+  }
+  .howto h2 { margin: 0 0 8px; font-size: 18px; color: var(--brand); }
+  .howto ol { margin: 0; padding-left: 20px; }
+  .howto li { margin: 4px 0; }
+  nav.toc { margin: 0 0 32px; }
+  nav.toc a {
+    display: inline-block;
+    margin: 0 8px 8px 0;
+    padding: 6px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--brand);
+    text-decoration: none;
+    font-size: 15px;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible { background: var(--tint); }
+  section.prompt { margin: 0 0 44px; scroll-margin-top: 16px; }
+  section.prompt h2 { margin: 0 0 6px; font-size: 24px; color: var(--brand); line-height: 1.25; }
+  .num { color: var(--accent); margin-right: 6px; }
+  .when { margin: 0 0 6px; color: var(--muted); }
+  .needs { margin: 0 0 14px; font-size: 15px; color: var(--muted); }
+  .needs strong { color: var(--ink); }
+  .box {
+    position: relative;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fbfcfd;
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 12px 10px 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .bar span { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+  button.copy {
+    appearance: none;
+    border: 0;
+    border-radius: 8px;
+    background: var(--brand);
+    color: #ffffff;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 18px;
+    min-height: 44px;
+    cursor: pointer;
+  }
+  button.copy:hover { background: #003a56; }
+  button.copy:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  button.copy.done { background: #1d6b3a; }
+  pre {
+    margin: 0;
+    padding: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.6;
+    max-height: 420px;
+    overflow: auto;
+  }
+  pre mark { background: var(--mark); color: inherit; padding: 0 2px; border-radius: 3px; }
+  .download { margin: 0 0 14px; }
+  a.dl {
+    display: inline-block;
+    padding: 10px 18px;
+    min-height: 44px;
+    border: 2px solid var(--brand);
+    border-radius: 8px;
+    color: var(--brand);
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  a.dl:hover, a.dl:focus-visible { background: var(--tint); }
+  .note {
+    border-left: 4px solid var(--accent);
+    padding: 12px 16px;
+    background: var(--tint);
+    border-radius: 0 10px 10px 0;
+    margin: 8px 0 0;
+    font-size: 15.5px;
+  }
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 20px 16px 40px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  @media (max-width: 520px) {
+    header h1 { font-size: 26px; }
+    section.prompt h2 { font-size: 21px; }
+    pre { font-size: 15px; max-height: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="eyebrow">SEE Community · Practical AI session · 24 October 2026</p>
+    <h1>Prompts to try</h1>
+    <p class="lead">Copy a prompt, paste it into your AI assistant and replace everything in <mark style="background:#fff1c2;color:#111;padding:0 3px;border-radius:3px">[brackets]</mark> with your own details.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="howto">
+      <h2>Before you start</h2>
+      <ol>
+        <li>The prompts work in Claude, ChatGPT, Microsoft Copilot and Gemini. Some steps need features your tool or plan may not have, such as scheduled tasks or access to your email.</li>
+        <li>Check your company’s AI policy before connecting a work mailbox or uploading work files. When in doubt, test with dummy data.</li>
+        <li>Read what comes back before you use or send it.</li>
+      </ol>
+    </div>
+
+    <nav class="toc" aria-label="Prompts on this page">
+      <a href="#global">1. Global instructions</a>
+      <a href="#email">2. Email triage</a>
+      <a href="#story">3. Selling story slides</a>
+      <a href="#news">4. Weekly news digest</a>
+    </nav>
+
+    <section class="prompt" id="global">
+      <h2><span class="num">1.</span>Global instructions for accurate answers</h2>
+      <p class="when">Set this up once. Your assistant then follows these rules in every chat.</p>
+      <p class="needs"><strong>Where to paste it:</strong> the custom or personal instructions in your assistant’s settings.</p>
+      <div class="box">
+        <div class="bar"><span>Prompt</span><button class="copy" type="button" data-target="p-global">Copy</button></div>
+<pre id="p-global">You are committed to truth and accuracy above everything else, including being helpful. A wrong answer delivered confidently is worse than no answer. Follow these 7 rules in every response:
+
+1. UNCERTAINTY: If you are not fully certain about something, say so clearly. Use phrases like "I am not certain, but..." or "You may want to verify this...". Never state guesses as facts.
+
+2. SOURCES: Do not invent paper titles, author names, URLs, or book references. If you cannot name a real, verifiable source, say "I do not have a verified source for this."
+
+3. STATISTICS: Flag any number you are not 100 percent confident in. Say "approximately" and recommend I verify it from a primary source.
+
+4. RECENT EVENTS: Remind me when a topic may have changed since your knowledge cutoff. Do not present outdated info as current.
+
+5. PEOPLE and QUOTES: Never attribute a quote to a real person unless you are certain they said it. If unsure, say "I cannot confirm this quote is accurate."
+
+6. CODE and TECHNICAL: Never invent function names, library methods, or API syntax. If unsure a function exists, tell me to verify it in the current docs.
+
+7. LOGIC GAPS: Do not fill missing context with assumptions. If something is unclear, ask a clarifying question before answering.
+
+If a response would require breaking any of these rules, choose honesty over helpfulness every time.</pre>
+      </div>
+    </section>
+
+    <section class="prompt" id="email">
+      <h2><span class="num">2.</span>Email triage</h2>
+      <p class="when">Sort your inbox by urgency and get draft replies to the urgent emails.</p>
+      <p class="needs"><strong>You need:</strong> your email connected to the assistant, or paste the emails into the chat.</p>
+      <div class="box">
+        <div class="bar"><span>Prompt</span><button class="copy" type="button" data-target="p-email">Copy</button></div>
+<pre id="p-email">Review my unread emails and triage them by urgency into these four categories:
+
+1. URGENT: Action needed today. Time-sensitive items, hard deadlines, supply chain risks (stockouts, shipment delays), or operational blocks where someone is waiting on me.
+2. Action needed: I need to reply, approve, review or do something, but not today.
+3. Need to be informed: Updates I should know about but don't need to act on.
+4. Newsletters and other info: Newsletters, notifications, promotions and automated alerts.
+
+For each email, give the sender, the subject, a one-line summary, and the deadline or required action if there is one. List the most critical items first within each category. If a deadline may already have passed, say so.
+
+Then draft a reply to each URGENT email and show the drafts for my review. Do not send anything. Use <mark>[brackets]</mark> for anything I need to confirm, such as times or quantities.
+
+If an email's urgency is unclear, put it in the higher category and tell me why.</pre>
+      </div>
+    </section>
+
+    <section class="prompt" id="story">
+      <h2><span class="num">3.</span>Selling story slides from your reports</h2>
+      <p class="when">Turn market and shopper reports into a 2-slide selling story for a retailer, with every number traced to its source.</p>
+      <p class="needs"><strong>You need:</strong> the reports attached to the chat, or a connected folder.</p>
+      <p class="download"><a class="dl" href="https://drive.google.com/file/d/1yYo6WF9yYin3WdfXTEb5OXQGb54MWQAY/view?usp=sharing" target="_blank" rel="noopener">Download sample reports (zip, about 70 MB)</a></p>
+      <div class="box">
+        <div class="bar"><span>Prompt</span><button class="copy" type="button" data-target="p-story">Copy</button></div>
+<pre id="p-story">Goal: Build a 2-slide selling story to convince <mark>[retailer]</mark> to list <mark>[your product]</mark> in <mark>[market]</mark>.
+Sources: Use ONLY the reports in <mark>[the attached files / the connected folder]</mark>. Do not use outside knowledge, the web, or assumptions. Do not invent, round up, or extrapolate any number, trend, or claim.
+Process:
+
+1. Read every report fully. Make a short list of the files you reviewed.
+2. Extract the most relevant evidence for a retailer: demand and growth in <mark>[your category]</mark>, shopper and consumer needs, category size and share, margin or basket value, trends, competitor gaps, and anything on the target channel or market.
+3. Build an evidence log (table) where each row has: ID (E1, E2...), the fact or figure as stated in the report, the report name, and the page or section. Quote figures exactly.
+4. Propose a storyline in 3-5 lines: the problem or opportunity for the retailer, the evidence, and the ask. Show it to me before building the slides.
+5. Turn the storyline into 2 slides:
+   * Slide 1, “The opportunity”: a headline that states the insight, 3-4 supporting data points, and one simple chart or visual if the data supports it.
+   * Slide 2, “Why this launch and what we propose”: a headline, the logic for why this product fits the retailer’s shoppers, and a clear next step or ask.
+6. Put an evidence reference on every claim, using the evidence log IDs in a small footnote (for example, [E3]). Put the full source list (report, page) in the speaker notes or a short appendix.
+
+Rules:
+
+* If the reports don’t contain evidence for a point I’d normally make, say so in a “Gaps” list. Do not fill the gap.
+* If two reports disagree, show both and flag the conflict.
+* Keep slide text concise: no paragraphs, one message per slide.
+* Tone: confident, fact-based, retailer-focused.
+
+Final check: Before delivering, re-verify every number on the slides against the evidence log and the original report. List any item you couldn’t verify.</pre>
+      </div>
+    </section>
+
+    <section class="prompt" id="news">
+      <h2><span class="num">4.</span>Weekly MENA FMCG and retail news digest</h2>
+      <p class="when">A short news digest every Monday, delivered to your inbox.</p>
+      <p class="needs"><strong>You need:</strong> a tool that can search the web, run scheduled tasks and send email. Without those, run it by hand and copy the result.</p>
+      <div class="box">
+        <div class="bar"><span>Prompt</span><button class="copy" type="button" data-target="p-news">Copy</button></div>
+<pre id="p-news">Every Monday morning, research the last 7 days of news in FMCG and retail across the MENA region (GCC, Egypt, Levant, North Africa). Cover: brand and retailer announcements, earnings and M&amp;A, pricing and commodity moves, supply chain and logistics, consumer trends, e-commerce and quick commerce, retail media, and regulatory or food-safety changes.
+
+Sources. Use any credible source, including news sites, trade press, company announcements, blogs, social media and aggregators. Prefer primary or original reporting, and cross-check claims that rely on social media, blogs or aggregators before including them. If a claim can’t be confirmed, leave it out.
+
+Date check. Include only items published within the last 7 days. Open each article to confirm its date. If fewer than 6 items qualify, include only those and say so in one line at the top.
+
+Format. English only. Title it “MENA FMCG &amp; Retail Weekly” with a 3-line “Top story,” then up to 8 items grouped by theme (Brands, Retail &amp; E-commerce, Markets &amp; Costs, Regulation). Each item gets a 2-sentence summary, why it matters, the publication date and a source link. End with a one-line “Watch next week.” Keep it under 500 words, scannable, no hype. Skip empty sections.
+
+Delivery. Email it to <mark>[email]</mark> with the subject “MENA FMCG &amp; Retail Weekly: <mark>[date]</mark>”.</pre>
+      </div>
+      <p class="note">Change the region, topics or format to fit your category. The date check and the instruction to leave out unconfirmed claims are what keep the digest reliable.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Shared at the SEE Community session “Practical AI for category, marketing and sales teams in FMCG and retail” by Tatiana Vorobeva, 24 October 2026.</div>
+</footer>
+
+<script>
+  (function () {
+    function fallbackCopy(text) {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.top = '-1000px';
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      return ok;
+    }
+    function flash(btn, label) {
+      btn.textContent = label;
+      btn.classList.add('done');
+      setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1800);
+    }
+    document.querySelectorAll('button.copy').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var el = document.getElementById(btn.getAttribute('data-target'));
+        var text = el ? el.textContent : '';
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(
+            function () { flash(btn, 'Copied'); },
+            function () { flash(btn, fallbackCopy(text) ? 'Copied' : 'Select and copy'); }
+          );
+        } else {
+          flash(btn, fallbackCopy(text) ? 'Copied' : 'Select and copy');
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>
